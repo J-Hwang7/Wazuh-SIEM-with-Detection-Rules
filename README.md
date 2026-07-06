@@ -7,7 +7,7 @@ This home project creates a Wazuh SIEM: allowing the accumulation and logging of
 For the project, I deployed Wazuh with Docker, created a target Windows 10 VM with Sysmon, installed a Wazuh agent on the VM, wrote three MITRE detection rules, converted the detection rules into Sigma-signature style, and tested each rule with Atomic Red Team.
 
 # Wazuh SIEM Procedures
-**Prequiste Installations**
+**Prerequisite Installations**
 - Docker Desktop
 - Windows 10 or 11 iso file
 - VirtualBox or VMware
