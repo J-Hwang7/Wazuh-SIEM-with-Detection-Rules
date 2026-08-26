@@ -1,5 +1,5 @@
 # Wazuh-SIEM-with-Detection-Rules-MyFirstHack
-This home project creates a Wazuh SIEM: allowing the accumulation and logging of events from attacks on a Windows victim VM, creating custom Sigma detection rules, and utilizing Atomic Red Team to test the SIEM. This project provides a great opportunity to familiarize with Sigma-style detection rules, creating a victim VM, telemetry, and running security tests.
+This home project creates a Wazuh SIEM: allowing the accumulation and logging of events from attacks on a Windows victim VM, creating custom Sigma detection rules, and utilizing Atomic Red Team to test the SIEM. This project provided a great opportunity to familiarize with Sigma-style detection rules, creating a victim VM, telemetry, and running security tests.
 
 **Author:** @J-Hwang7 **Date** May 2026
 
@@ -7,7 +7,7 @@ This home project creates a Wazuh SIEM: allowing the accumulation and logging of
 For the project, I deployed Wazuh with Docker, created a target Windows 10 VM with Sysmon, installed a Wazuh agent on the VM, wrote three MITRE detection rules, converted the detection rules into Sigma-signature style, and tested each rule with Atomic Red Team.
 
 # How it works 
-
+Wazuh acts as a data collection sensor at endpoints (VM), meaning it can receive security logs and changes. By utilizing custom MITRE ATT&CK detection rules, the SIEM is able to create alerts based on specific events. MITRE detection rules serve to ensure that not every activity is flagged by the SIEM, as specific actions that break the detection rules will create an alert
 
 # Simulating Attacks
 
